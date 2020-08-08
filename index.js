@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 const redis = require('redis');
 
 const PORT = process.env.PORT || 3000;
-const REDIS_PORT = 6379;
+const REDIS_PORT = 6000; // default 6379
 
 const client = redis.createClient(REDIS_PORT);
 
@@ -38,8 +38,8 @@ const cache = (req, res, next) => {
   const { username } = req.params
 
   client.get(username, (err, data) => {
-    if(err) throw err;
-    if(data !== null) {
+    if (err) throw err;
+    if (data !== null) {
       res.send(setResponse(username, data));
     } else {
       next();
