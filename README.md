@@ -8,4 +8,4 @@
 
 
 ### API endpoint
-```localhost:3000/repos/${username}```
+```localhost:3000/repos/${github_username}```
