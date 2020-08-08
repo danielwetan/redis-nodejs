@@ -1,7 +1,7 @@
 #### Getting started
 Docker pull: ```docker pull danielwetan/redis-nodejs```
 
-Git clone: ```git clone: https://github.com/danielwetan/redis-nodejs.git```
+Git clone: ```git clone https://github.com/danielwetan/redis-nodejs.git```
 
 ---
 
